@@ -1,5 +1,5 @@
 document.getElementById('searchForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Empêche la soumission du formulaire par défaut
+    event.preventDefault(); 
 
     const searchTerm = document.getElementById('search').value;
     console.log('Recherche soumise :', searchTerm);
