@@ -20,20 +20,46 @@ body {
     display: flex;
     justify-content: space-between;
 }
+#search{
+    border: none;
+}
+#search-button{
+    background-color: gainsboro;
+    border: none;
+    padding: 7px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    position: relative;
+    top: -8px;
+}
+#searchForm{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 20px;
+}
 #middle{
     display: flex;
     flex-direction: column;
     text-align: center;
     font-weight: bold;
     margin-bottom: 20px;
+    padding: 10px;
 }
 #numberDegre{
     font-size: 40px;
+}
+#humidityPercentage{
+    display: flex;
+}
+#humidityNumber, #windSpeed{
+    font-size: 20px;
 }
 #botLeft, #botRight{
     display: flex;
     flex-direction: column;
 }
 #dataApi{
-    /* display: none; */
+    display: none;
+    padding: 0px 20px;
 } 
