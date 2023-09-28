@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://api.openweathermap.org https://api.openweathermap.org; script-src 'self'">
     <link href="./style.css" rel="stylesheet" />
     
@@ -19,9 +20,29 @@
               </svg>
           </button>
         </form>
-        <div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png">
+      <div id="dataApi">
+       <img src="https://openweathermap.org/img/wn/10d@4x.png" id="imgWeather"/>
+       
+        <div id="display">
+          <div id="middle">  
+            <div>
+              <span id="numberDegre">26</span>
+              <span id="degre">°c</span>
+            </div>    
+            <span id="weather">Scattered Clouds</span>
+          </div>
+          <div id="bottom">
+            <div id="botLeft">
+              <span id="humidityNumber">86%</span>
+              <span id="humidity">Humidity</span>
+            </div>
+            <div id="botRight">
+              <span id="windSpeed">2Km/h</span>
+              <span id="wind">Wind speed</span>
+            </div>
+          </div>
         </div>
+      </div>
       </div>
     </div>
   </body>
