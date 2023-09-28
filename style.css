@@ -1,7 +1,6 @@
 body {
     background-color: #04263E;
 }
-
 #containerDiv {
     width: 97vw;
     height: 97vh;
@@ -9,13 +8,32 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 #cardDiv {
     background-color: azure;
     border-radius: 10px;
     padding: 10px;
 }
-
 #search {
     height: 20px;
 }
+#bottom{
+    display: flex;
+    justify-content: space-between;
+}
+#middle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#numberDegre{
+    font-size: 40px;
+}
+#botLeft, #botRight{
+    display: flex;
+    flex-direction: column;
+}
+#dataApi{
+    display: none;
+} 
