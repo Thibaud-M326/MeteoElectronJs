@@ -4,11 +4,14 @@
   "description": "a desktop application created with Electron JS that retrieves local weather information by searching the OpenWeatherMap API",
   "main": "main.js",
   "scripts": {
-    "start": "electron ." 
+    "start": "electron ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "electron": "^26.2.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
   }
 }
