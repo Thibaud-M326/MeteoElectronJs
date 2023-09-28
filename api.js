@@ -1,5 +1,3 @@
-
-
 export async function getCoordsAPI(name) {
 
     const response = await axios.get("http://api.openweathermap.org/geo/1.0/direct?q=" + name + "&appid=f7cf692d475730ba990683a444c7b600");
