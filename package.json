@@ -1,0 +1,14 @@
+{
+  "name": "meteoelectronjs",
+  "version": "1.0.0",
+  "description": "a desktop application created with Electron JS that retrieves local weather information by searching the OpenWeatherMap API",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ." 
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.2.3"
+  }
+}
