@@ -1,4 +1,8 @@
 const { app, BrowserWindow } = require('electron')
+const path = require('path');
+const electronReload = require('electron-reload');
+
+electronReload(__dirname);
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -10,5 +14,9 @@ const createWindow = () => {
 }
 
 app.whenReady().then(() => {
-  createWindow()
+  if (BrowserWindow.getAllWindows().length === 0) createWindow()
+})
+
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') app.quit()
 })
