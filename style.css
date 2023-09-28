@@ -1,3 +1,21 @@
-#hello {
-    color: rgb(0, 132, 255);
+body {
+    background-color: #04263E;
+}
+
+#containerDiv {
+    width: 97vw;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cardDiv {
+    background-color: azure;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#search {
+    height: 20px;
 }
