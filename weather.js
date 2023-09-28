@@ -1,6 +1,10 @@
-document.getElementById('searchForm').addEventListener('submit', function(event) {
+import { getCoordsAPI, getWeatherAPI } from "./api.js";
+
+document.getElementById('searchForm').addEventListener('submit',async function(event) {
     event.preventDefault(); // Empêche la soumission du formulaire par défaut
 
     const searchTerm = document.getElementById('search').value;
-    console.log('Recherche soumise :', searchTerm);
+
+    const {lat, lon} = await getCoordsAPI(searchTerm);
+    console.log(await getWeatherAPI(lat, lon));
 });
