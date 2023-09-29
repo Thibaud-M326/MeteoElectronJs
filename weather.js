@@ -20,5 +20,5 @@ document.getElementById('searchForm').addEventListener('submit',async function(e
     document.getElementById('numberDegre').innerHTML= Math.round(data.main.temp - 273.15);
     document.getElementById('weather').innerHTML= data.weather[0].description;
     document.getElementById('humidityNumber').innerHTML= data.main.humidity;
-    document.getElementById('windSpeed').innerHTML= data.wind.speed;
+    document.getElementById('windSpeed').innerHTML= Math.round(data.wind.speed * 3.6) + " km/h";
 });
